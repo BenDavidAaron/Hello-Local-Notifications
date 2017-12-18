@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func onTimerTapped() {
         print("timer")
+        UNService.shared.timerRequest(with: 5)
     }
     
     @IBAction func onDateTapped() {
