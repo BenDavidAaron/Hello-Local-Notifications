@@ -18,15 +18,27 @@ class ViewController: UIViewController {
     
     @IBAction func onTimerTapped() {
         print("timer")
-        UNService.shared.timerRequest(with: 5)
+        AlertService.actionSheet(in: self, title: "5 Secs"){
+            UNService.shared.timerRequest(with: 5)
+        }
+        
     }
     
     @IBAction func onDateTapped() {
         print("date")
+        AlertService.actionSheet(in: self, title: "Some future time"){
+            var components = DateComponents()
+            components.second = 0
+            UNService.shared.dateRequest(with: components)
+        }
+        
     }
     
     @IBAction func onLocationTapped() {
         print("location")
+        AlertService.actionSheet(in: self, title: "When I return"){
+            
+        }
     }
 }
 
