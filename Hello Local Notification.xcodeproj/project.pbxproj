@@ -13,6 +13,7 @@
 		B590921D1FCBBEEA006B2BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B590921C1FCBBEEA006B2BB4 /* Assets.xcassets */; };
 		B59092201FCBBEEA006B2BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B590921E1FCBBEEA006B2BB4 /* LaunchScreen.storyboard */; };
 		B590922C1FCBC125006B2BB4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590922B1FCBC125006B2BB4 /* ShadowView.swift */; };
+		B5AF75671FE85FC40044131C /* UNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF75661FE85FC40044131C /* UNService.swift */; };
 		B5DE90641FCBC79B008E162A /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DE90611FCBC79B008E162A /* DateAlert.png */; };
 		B5DE90651FCBC79B008E162A /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DE90621FCBC79B008E162A /* LocationAlert.png */; };
 		B5DE90661FCBC79B008E162A /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DE90631FCBC79B008E162A /* TimeAlert.png */; };
@@ -27,6 +28,7 @@
 		B590921F1FCBBEEA006B2BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B59092211FCBBEEA006B2BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B590922B1FCBC125006B2BB4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		B5AF75661FE85FC40044131C /* UNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNService.swift; sourceTree = "<group>"; };
 		B5DE90611FCBC79B008E162A /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 		B5DE90621FCBC79B008E162A /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
 		B5DE90631FCBC79B008E162A /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		B59092271FCBBF2C006B2BB4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B5AF75661FE85FC40044131C /* UNService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				B590922C1FCBC125006B2BB4 /* ShadowView.swift in Sources */,
 				B59092181FCBBEEA006B2BB4 /* ViewController.swift in Sources */,
+				B5AF75671FE85FC40044131C /* UNService.swift in Sources */,
 				B59092161FCBBEEA006B2BB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
