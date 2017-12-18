@@ -38,7 +38,7 @@ class UNService: NSObject {
         content.title = "Timer Finished"
         content.body = "Thats all Folks"
         content.sound = .default()
-        content.badge = 69
+        content.badge = 1
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.timer",
@@ -56,7 +56,7 @@ class UNService: NSObject {
         content.title = "Date Trigger"
         content.body = "The future is now!"
         content.sound = .default()
-        content.badge = 99999999999999
+        content.badge = 2
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: componets, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.date",
