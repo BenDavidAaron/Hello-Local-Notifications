@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B50D867B1FE8867B0047ED00 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D867A1FE8867B0047ED00 /* CLService.swift */; };
+		B57615741FE892EB001A45C1 /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */; };
 		B59092161FCBBEEA006B2BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59092151FCBBEEA006B2BB4 /* AppDelegate.swift */; };
 		B59092181FCBBEEA006B2BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59092171FCBBEEA006B2BB4 /* ViewController.swift */; };
 		B590921B1FCBBEEA006B2BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59092191FCBBEEA006B2BB4 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B50D867A1FE8867B0047ED00 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
+		B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
 		B59092121FCBBEEA006B2BB4 /* Hello Local Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Local Notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59092151FCBBEEA006B2BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B59092171FCBBEEA006B2BB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		B590922A1FCBBF53006B2BB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57615741FE892EB001A45C1 /* NotificationAttachmentID.swift in Sources */,
 				B50D867B1FE8867B0047ED00 /* CLService.swift in Sources */,
 				B590922C1FCBC125006B2BB4 /* ShadowView.swift in Sources */,
 				B59092181FCBBEEA006B2BB4 /* ViewController.swift in Sources */,
