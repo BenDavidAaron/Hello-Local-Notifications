@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     
     @objc
     func didEnterRegion(){
-        
+        UNService.shared.locationRequest()
     }
     
 }

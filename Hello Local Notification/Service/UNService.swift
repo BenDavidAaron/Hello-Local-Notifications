@@ -69,12 +69,13 @@ class UNService: NSObject {
     }
     
     func locationRequest() {
-        UNService.shared.locationRequest()
+        //UNService.shared.locationRequest()
         let content = UNMutableNotificationContent()
         content.title = "Location Trigger"
         content.body = "You Returned Here!"
         content.sound = .default()
         content.badge = 3
+        content.categoryIdentifier = "NotificationCategory.location.rawValue"
         
         if let attachment = getAttachment(for: .location){
             content.attachments = [attachment]
