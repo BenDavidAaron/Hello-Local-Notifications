@@ -48,7 +48,17 @@ class UNService: NSObject {
     }
     
     func locationRequest() {
+        UNService.shared.locationRequest()
+        let content = UNMutableNotificationContent()
+        content.title = "Location Trigger"
+        content.body = "You Returned Here!"
+        content.sound = .default()
+        content.badge = 3
         
+        let request = UNNotificationRequest(identifier: "userNotification.location",
+                                            content: content,
+                                            trigger: nil)
+        unCenter.add(request)
     }
 
     func dateRequest(with componets: DateComponents) {

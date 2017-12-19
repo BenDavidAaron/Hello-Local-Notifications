@@ -15,6 +15,7 @@ class CLService: NSObject {
     static let shared = CLService()
     
     let locationManager = CLLocationManager()
+    var shouldSetRegion = true
     
     func authorize() {
         locationManager.requestAlwaysAuthorization()
@@ -23,6 +24,7 @@ class CLService: NSObject {
     }
     
     func updateLocation() {
+        shouldSetRegion = true
         locationManager.startUpdatingLocation()
     }
 }
@@ -30,5 +32,16 @@ class CLService: NSObject {
 extension CLService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("got location")
+        guard let currentLocation = locations.first, shouldSetRegion else { return }
+        shouldSetRegion = false
+        let region = CLCircularRegion(center: currentLocation.coordinate, radius: 20, identifier: "startPosition")
+        manager.startMonitoring(for: region)
     }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        print("did enter region via CoreLoc")
+        NotificationCenter.default.post(name: NSNotification.Name("internalNotification.enteredRegion"),
+                                        object: nil)
+    }
+    
 }

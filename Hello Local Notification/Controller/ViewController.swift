@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         
         UNService.shared.authorize()
         CLService.shared.authorize()
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(didEnterRegion),
+                                               name: NSNotification.Name("internalNotification.enteredRegion"),
+                                               object: nil)
     }
     
     @IBAction func onTimerTapped() {
@@ -22,17 +26,15 @@ class ViewController: UIViewController {
         AlertService.actionSheet(in: self, title: "5 Secs"){
             UNService.shared.timerRequest(with: 5)
         }
-        
     }
     
     @IBAction func onDateTapped() {
         print("date")
-        AlertService.actionSheet(in: self, title: "Some future time"){
+        AlertService.actionSheet(in: self, title: "The next Minute"){
             var components = DateComponents()
             components.second = 0
             UNService.shared.dateRequest(with: components)
         }
-        
     }
     
     @IBAction func onLocationTapped() {
@@ -41,5 +43,11 @@ class ViewController: UIViewController {
             CLService.shared.updateLocation()
         }
     }
+    
+    @objc
+    func didEnterRegion(){
+        
+    }
+    
 }
 
