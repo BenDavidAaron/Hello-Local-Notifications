@@ -58,11 +58,10 @@ class ViewController: UIViewController {
     func handleAction(_ sender: Notification){
         guard let action = sender.object as? NotificationActionID else { return }
         switch action {
-        case .timer: print("timer logic executing")
-        case .location: print("location logic executing")
-        case .date: print("date logic executing")
+        case .timer: view.backgroundColor = .green
+        case .location: view.backgroundColor = .red
+        case .date: view.backgroundColor = .blue
         }
     }
-    
 }
 
