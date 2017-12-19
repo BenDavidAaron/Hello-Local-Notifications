@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B50D867B1FE8867B0047ED00 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D867A1FE8867B0047ED00 /* CLService.swift */; };
+		B53E065B1FE8D7F500BF2592 /* NotificationActionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E065A1FE8D7F500BF2592 /* NotificationActionID.swift */; };
+		B53E065D1FE8D99300BF2592 /* NotificationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E065C1FE8D99300BF2592 /* NotificationCategory.swift */; };
 		B57615741FE892EB001A45C1 /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */; };
 		B59092161FCBBEEA006B2BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59092151FCBBEEA006B2BB4 /* AppDelegate.swift */; };
 		B59092181FCBBEEA006B2BB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59092171FCBBEEA006B2BB4 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		B50D867A1FE8867B0047ED00 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
+		B53E065A1FE8D7F500BF2592 /* NotificationActionID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionID.swift; sourceTree = "<group>"; };
+		B53E065C1FE8D99300BF2592 /* NotificationCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategory.swift; sourceTree = "<group>"; };
 		B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
 		B59092121FCBBEEA006B2BB4 /* Hello Local Notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Local Notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59092151FCBBEEA006B2BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				B57615731FE892EB001A45C1 /* NotificationAttachmentID.swift */,
+				B53E065A1FE8D7F500BF2592 /* NotificationActionID.swift */,
+				B53E065C1FE8D99300BF2592 /* NotificationCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				B5AF75671FE85FC40044131C /* UNService.swift in Sources */,
 				B59092161FCBBEEA006B2BB4 /* AppDelegate.swift in Sources */,
 				B5AF75691FE86A260044131C /* AlertService.swift in Sources */,
+				B53E065B1FE8D7F500BF2592 /* NotificationActionID.swift in Sources */,
+				B53E065D1FE8D99300BF2592 /* NotificationCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
