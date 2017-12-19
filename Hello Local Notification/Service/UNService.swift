@@ -135,6 +135,12 @@ class UNService: NSObject {
 extension UNService: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("UN did recieve response")
+        
+        if let action = NotificationActionID(rawValue: response.actionIdentifier){
+            NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleAction"),
+                                            object: action)
+        }
+        
         completionHandler()
     }
     
